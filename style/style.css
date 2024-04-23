@@ -225,8 +225,7 @@
         background-color: white;
         transition: 0.4s;
         border: 2px solid white;
-        box-shadow: 1px 1px 25px white;
-        padding: 40px;
+        box-shadow: 1px 1px 35px white;
     }
 }
 
@@ -314,6 +313,9 @@
 }
 
 .div7::-webkit-input-placeholder {
+    color: #BBBBBB;
+}
+.div8::-webkit-input-placeholder {
     color: #BBBBBB;
 }
 
