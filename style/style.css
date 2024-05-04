@@ -1,3 +1,15 @@
+/* Scroll Bar */
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #00F0DD;
+}
+
+/* Scroll Bar end */
+
 * {
     color: aliceblue !important;
     margin: 0px;
@@ -57,7 +69,7 @@
     }
 }
 
-.border {
+.bor {
     border: 2px solid white !important;
 }
 
@@ -173,9 +185,9 @@
     .text-Edu:hover {
         width: 610px;
         height: 240px;
-        padding-top: 30px !important;
+        /* padding-top: 30px !important; */
         box-shadow: 1px 1px 25px #00F0DD;
-        transition: 0.4s;
+        transition: 0.3s;
     }
 }
 
@@ -187,17 +199,20 @@
     }
 }
 
-.para1 {
-    margin-top: 15px;
-}
-
 .para2 {
     color: #BBBBBB !important;
     font-size: 15px;
+   
+}
+@media(min-width: 600px) {
+    .para2 {
+        width: 500px;
+    }
 }
 
 .div2 {
     width: 500px;
+    height: 240px;
     border-radius: 10px;
     border: 2px solid #00F0DD;
     box-shadow: 1px 1px 25px #00F0DD;
@@ -205,6 +220,7 @@
     padding: 30px;
     cursor: pointer;
 }
+
 
 @media(max-width: 500px) {
     .div2 {
@@ -221,12 +237,11 @@
 }
 
 @media(min-width: 550px) {
-    .div2:hover {
-        background-color: white;
-        transition: 0.4s;
-        border: 2px solid white;
-        box-shadow: 1px 1px 35px white;
-    }
+    .div2:hover{
+    width: 520px;
+    height: 250px;
+    transition: 0.5s;
+}
 }
 
 .para4 {
@@ -356,8 +371,6 @@
 
 .div9 {
     background-color: #0F0F0F;
-    /* display: flex; */
-    /* justify-content: center; */
 }
 
 .para9 {
