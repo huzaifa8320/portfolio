@@ -405,7 +405,14 @@
         margin-top: 10px;
     }
 }
-
+.para13{
+    font-size: 45px;
+}
+@media(max-width: 430px) {
+    .para13{
+        font-size: 35px;
+    }
+}
 /* Pop Up */
 .modal {
     display: none;
