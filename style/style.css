@@ -241,6 +241,7 @@
     width: 520px;
     height: 250px;
     transition: 0.5s;
+    box-shadow: 1px 1px 35px #00F0DD;
 }
 }
 
