@@ -143,16 +143,6 @@
     height: 38px;
     transition: 0.4s;
 }
-
-.btn-2:hover {
-    background-color: #00F0DD;
-    transition: 0.4s;
-    color: black !important;
-    box-shadow: 1px 1px 35px #00F0DD;
-    width: 95px;
-    height: 40px;
-}
-
 .btn-2 {
     width: 90px;
     height: 35px;
@@ -160,7 +150,23 @@
     background: none;
     color: #00F0DD !important;
     border: 2px solid #00F0DD;
+    background: linear-gradient(to right, #00F0DD 50%, black 50%);
+    background-size: 200% 100%;
+    background-position: right;
+    transition: 0.5s;
 }
+
+.btn-2:hover {
+    background-color: #00F0DD;
+    transition: 0.4s;
+    width: 95px;
+    height: 40px;
+    color: black !important;
+    background-position: left;
+    box-shadow: 1px 1px 25px #00F0DD;
+}
+
+
 
 .para-Edu {
     font-size: 45px;
@@ -350,19 +356,23 @@
     width: 120px;
     height: 40px;
     border-radius: 20px;
-    background: none;
+    /* background: none; */
     border: 2px solid #00F0DD;
     font-size: 13px;
     font-weight: bold;
     color: #00F0DD !important;
     box-shadow: 1px 1px 15px #00F0DD;
+    /* falto */
+    background: linear-gradient(to right, #00F0DD 50%, black 50%);
+    background-size: 200% 100%;
+    background-position: right;
+    transition: 0.5s;
 }
 
 .btn-3:hover {
-    border: none;
-    background-color: #00F0DD;
-    transition: 1s;
     color: black !important;
+    background-position: left;
+    box-shadow: 1px 1px 25px #00F0DD;
 }
 
 .para8 {
