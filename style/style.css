@@ -461,3 +461,43 @@
     top: 10px;
     right: 10px;
 }
+/* Falto  */
+
+
+/* .para14 {
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 2px solid #00F0DD;
+    animation: typing 5s steps(31) 0s forwards, blink-caret 0.75s infinite;
+    width: auto;
+}
+
+@keyframes typing {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+@keyframes blink-caret {
+    0%, 50% {
+        border-right-color: transparent;
+    }
+    51%, 100% {
+        border-right-color: #00F0DD;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .para14 {
+        animation: typing 3s steps(31) 0s forwards, blink-caret 0.75s infinite; 
+    }
+} */
+
+
+
+
