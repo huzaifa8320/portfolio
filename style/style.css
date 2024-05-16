@@ -356,13 +356,11 @@
     width: 120px;
     height: 40px;
     border-radius: 20px;
-    /* background: none; */
     border: 2px solid #00F0DD;
     font-size: 13px;
     font-weight: bold;
     color: #00F0DD !important;
     box-shadow: 1px 1px 15px #00F0DD;
-    /* falto */
     background: linear-gradient(to right, #00F0DD 50%, black 50%);
     background-size: 200% 100%;
     background-position: right;
@@ -461,43 +459,35 @@
     top: 10px;
     right: 10px;
 }
-/* Falto  */
+/* Pop up end  */
 
+/* text animation */
 
-/* .para14 {
-    display: inline-block;
-    white-space: nowrap;
-    overflow: hidden;
-    border-right: 2px solid #00F0DD;
-    animation: typing 5s steps(31) 0s forwards, blink-caret 0.75s infinite;
-    width: auto;
-}
-
-@keyframes typing {
-    0% {
-        width: 0;
-    }
-    100% {
-        width: 100%;
-    }
-}
-
-@keyframes blink-caret {
-    0%, 50% {
-        border-right-color: transparent;
-    }
-    51%, 100% {
-        border-right-color: #00F0DD;
-    }
-}
-
-
-@media (max-width: 768px) {
+@media(min-width:500px){
     .para14 {
-        animation: typing 3s steps(31) 0s forwards, blink-caret 0.75s infinite; 
+        display: inline-block;
+        overflow: hidden;
+        border-right: 2px solid #00F0DD;
+        white-space: nowrap;
+        animation: typing 3s steps(12, end) 0s forwards, blink-caret 0.70s step-end infinite;
     }
-} */
-
-
-
-
+    
+    @keyframes typing {
+        from {
+            width: 0;
+        }
+        to {
+            width: 29ch; 
+        }
+    }
+    
+    @keyframes blink-caret {
+        from, to {
+            border-right-color: transparent;
+        }
+        50% {
+            border-right-color: #00F0DD;
+        }
+    }
+}
+/* text animation end */
