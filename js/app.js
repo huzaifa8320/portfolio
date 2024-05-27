@@ -56,3 +56,12 @@ window.addEventListener('click', (event) => {
         modal.style.display = 'none'; // Hide the modal
     }
 });
+
+// loading 
+var web = document.getElementById(`web`)
+var video = document.getElementById(`video`)
+web.style.display = `none`
+setTimeout(() => {
+    video.style.display = `none`
+    web.style.display = `block`
+}, 3000);
