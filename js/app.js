@@ -29,7 +29,7 @@ form.addEventListener('submit', async (e) => {
 
         if (response.ok) { // Show the modal on successful submission
             modal.style.display = 'flex';
-            form.reset(); 
+            form.reset();
         } else {
             const data = await response.json();
             result.innerHTML = `Error: ${data.message}`; // Display error message
@@ -65,3 +65,28 @@ setTimeout(() => {
     video.style.display = `none`
     web.style.display = `block`
 }, 3000);
+
+// See more 
+
+var show_div = document.getElementById(`show_div`)
+var show_Button = document.getElementById(`show_Button`)
+
+var condition = false
+if (condition == false) {
+    show_div.style.display = `none`
+    condition = true
+}
+
+show_Button.addEventListener(`click`, function () {
+    if(condition == true) {
+        show_div.style.display = `flex`
+        show_Button.innerText = `Show less`
+        condition = false
+    }
+
+else if (condition == false) {
+        show_div.style.display = `none`
+        show_Button.innerText = `Show more`
+        condition = true
+ }
+})

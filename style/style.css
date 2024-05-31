@@ -507,3 +507,14 @@
     align-items: center;
     justify-content: center;
 }
+
+/* show more  */
+#show_Button{
+    color: #00F0DD !important;
+    background: none;
+    border: none;
+    width: 160px;
+    text-decoration: underline;
+    font-size: 23px;
+}
+/* show more  end*/
