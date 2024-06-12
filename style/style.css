@@ -89,8 +89,7 @@
 
 .icon-Div:hover {
     background-color: #00F0DD;
-    width: 45px;
-    height: 45px;
+    transform: scale(1.20);
     transition: 0.4s;
     box-shadow: 1px 1px 25px #00F0DD;
 }
@@ -139,10 +138,11 @@
 
 .btn-1:hover {
     box-shadow: 1px 1px 35px #00F0DD;
-    width: 93px;
-    height: 38px;
+    transform: scale(1.13);
     transition: 0.4s;
+
 }
+
 .btn-2 {
     width: 90px;
     height: 35px;
@@ -159,8 +159,7 @@
 .btn-2:hover {
     background-color: #00F0DD;
     transition: 0.4s;
-    width: 95px;
-    height: 40px;
+    transform: scale(1.13);
     color: black !important;
     background-position: left;
     box-shadow: 1px 1px 25px #00F0DD;
@@ -175,6 +174,7 @@
 .navbar-div {
     background-color: black;
     position: fixed;
+    z-index: 999;
 }
 
 .text-Edu {
@@ -189,9 +189,7 @@
 
 @media(min-width: 630px) {
     .text-Edu:hover {
-        width: 610px;
-        height: 240px;
-        /* padding-top: 30px !important; */
+        transform: scale(1.03);
         box-shadow: 1px 1px 25px #00F0DD;
         transition: 0.3s;
     }
@@ -208,8 +206,9 @@
 .para2 {
     color: #BBBBBB !important;
     font-size: 15px;
-   
+
 }
+
 @media(min-width: 600px) {
     .para2 {
         width: 500px;
@@ -243,12 +242,11 @@
 }
 
 @media(min-width: 550px) {
-    .div2:hover{
-    width: 520px;
-    height: 250px;
-    transition: 0.5s;
-    box-shadow: 1px 1px 35px #00F0DD;
-}
+    .div2:hover {
+        transform: scale(1.03);
+        transition: 0.5s;
+        box-shadow: 1px 1px 35px #00F0DD;
+    }
 }
 
 .para4 {
@@ -287,7 +285,7 @@
 }
 
 .div4:hover {
-    padding: 10px;
+    transform: scale(1.04);
     transition: 0.4s;
 }
 
@@ -337,6 +335,7 @@
 .div7::-webkit-input-placeholder {
     color: #BBBBBB;
 }
+
 .div8::-webkit-input-placeholder {
     color: #BBBBBB;
 }
@@ -370,6 +369,7 @@
 .btn-3:hover {
     color: black !important;
     background-position: left;
+    transform: scale(1.12);
     box-shadow: 1px 1px 25px #00F0DD;
 }
 
@@ -399,6 +399,11 @@
     font-size: 50px;
 }
 
+.para11:hover{
+    transform: 0.3s;
+    transform: scale(1.13);
+}
+
 .div10 {
     text-align: center;
 }
@@ -409,19 +414,23 @@
         justify-content: center !important;
     }
 }
+
 @media(max-width: 450px) {
-    .para12{
+    .para12 {
         margin-top: 10px;
     }
 }
-.para13{
+
+.para13 {
     font-size: 45px;
 }
+
 @media(max-width: 430px) {
-    .para13{
+    .para13 {
         font-size: 35px;
     }
 }
+
 /* Pop Up */
 .modal {
     display: none;
@@ -459,11 +468,12 @@
     top: 10px;
     right: 10px;
 }
+
 /* Pop up end  */
 
 /* text animation */
 
-@media(min-width:500px){
+@media(min-width:500px) {
     .para14 {
         display: inline-block;
         overflow: hidden;
@@ -471,25 +481,30 @@
         white-space: nowrap;
         animation: typing 2s steps(12, end) 0s forwards, blink-caret 0.70s step-end infinite;
     }
-    
+
     @keyframes typing {
         from {
             width: 0;
         }
+
         to {
-            width: 29ch; 
+            width: 29ch;
         }
     }
-    
+
     @keyframes blink-caret {
-        from, to {
+
+        from,
+        to {
             border-right-color: transparent;
         }
+
         50% {
             border-right-color: #00F0DD;
         }
     }
 }
+
 /* text animation end */
 
 /* loading  */
@@ -497,6 +512,7 @@
     width: 100%;
     height: auto;
 }
+
 #video {
     position: fixed;
     width: 100%;
@@ -509,7 +525,7 @@
 }
 
 /* show more  */
-#show_Button{
+#show_Button {
     color: #00F0DD !important;
     background: none;
     border: none;
@@ -517,4 +533,5 @@
     text-decoration: underline;
     font-size: 23px;
 }
+
 /* show more  end*/
