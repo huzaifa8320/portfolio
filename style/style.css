@@ -2,6 +2,7 @@
 
 ::-webkit-scrollbar {
     width: 12px;
+    background-color: black;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -37,12 +38,17 @@
 }
 
 .div1 {
-    /* border: 3px solid #363636; */
     box-shadow: 1px 1px 35px #7d7b7b;
     border-radius: 50%;
     width: 350px;
     height: 350px;
-   
+    animation: myfirst 4s infinite;
+}
+
+@keyframes myfirst {
+    50% {
+        transform: scale(1.10);
+    }
 }
 
 .img1 {
@@ -53,7 +59,6 @@
 
 .div1:hover {
     box-shadow: 1px 1px 50px #7d7b7b;
-    transform: scale(1.05);
     transition: 0.4s;
 }
 
@@ -401,7 +406,7 @@
     font-size: 50px;
 }
 
-.para11:hover{
+.para11:hover {
     transform: 0.3s;
     transform: scale(1.13);
 }
