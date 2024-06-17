@@ -37,11 +37,12 @@
 }
 
 .div1 {
-    border: 3px solid #00f0dc8d;
-    box-shadow: 1px 1px 25px #00F0DD;
+    /* border: 3px solid #363636; */
+    box-shadow: 1px 1px 35px #7d7b7b;
     border-radius: 50%;
     width: 350px;
     height: 350px;
+   
 }
 
 .img1 {
@@ -51,7 +52,8 @@
 }
 
 .div1:hover {
-    box-shadow: 1px 1px 70px #00F0DD;
+    box-shadow: 1px 1px 50px #7d7b7b;
+    transform: scale(1.05);
     transition: 0.4s;
 }
 
